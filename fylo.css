@@ -1,0 +1,454 @@
+@import url('https://fonts.google.com/specimen/Raleway');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+:root {
+    /* setting out the color guides*/
+    --main-background: hsl(218, 28%, 13%);
+    --footer-background-color: hsl(216, 53%, 9%);
+    --test-background-color: hsl(219, 30%, 18%);
+    --intro-email-background: hsl(217, 28%, 15%);
+
+    /* neutral body color and other body styles */
+    --color: hsl(0, 0%, 100%);
+    --font-size: 15px;
+
+    /*headings, navigation */
+    --heading-font-family: "Raleway";
+
+    /* body fonts */
+    --body-font-family: "Open Sans";
+}
+* {
+    box-sizing: border-box;
+    margin: o;
+    padding: 0;
+}
+/*html {
+    background-color: var(--main-background);
+} */
+
+/* body styles*/
+body {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--color);
+    background-color: var(--main-background); 
+    font-family: var(--body-font-family)
+}
+/*.body {
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}*/
+header {
+    background-color: var(--test-background-color);
+}
+.arrow {
+    border-bottom: 2px solid hsl(176, 68%, 64%);
+    width: 38%;
+}
+.arrow-img {
+    margin-left: 6px;
+    margin-bottom: -3px;
+}
+a {
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+}
+p {
+    font-size: var(--font-size);
+    line-height: 1.7em;
+    font-weight: 400;
+}
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    color: var(--color);
+}
+.email a {
+    text-decoration: none;
+    color: var(--color)
+}
+h2, nav a {
+    font-family: var(--heading-font-family);
+}
+
+.header {
+    position: relative;
+}
+button {
+    border-radius: 50px;
+    padding: 10px;
+    margin: 20px;
+    width: 30%;
+    background-color:  hsl(176, 68%, 64%);
+}
+.nav {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    margin-left: 5px;
+}
+
+.logo {
+    margin: 15px;
+}
+.intro  {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin-bottom: 20%;
+ 
+}
+.desktop {
+   -ms-flex-order: 1;
+    
+}
+.padlock {
+    -ms-flex-order: 2;
+}
+.checkmark {
+   -ms-flex-order: 3; 
+}
+.files {
+    -ms-flex-order: 4;
+}
+
+.intro > div, .main > div {
+    height: 400px;
+    width: 50%;
+}
+
+.main {
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: justify;
+}
+/*.column-3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+    justify-content: space-between;
+    align-content: center;
+    text-align: justify;
+    background-color: var(--test-background-color);
+    border: 49x solid red;
+} */
+.row:after  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    padding: 15px;
+    margin-top: -3%;
+    margin-right: 20px;
+    z-index: -1;
+   /* background-image: url(../images/bg-quotes.png) top left no-repeat;*/
+    background-color: var(--test-background-color); 
+    border-radius: 8px;
+    text-align: justify;
+   /* border: 4px solid rgb(233, 150, 150); */
+    box-shadow: 10px 10px 5px  hsl(218, 28%, 13%);
+  }
+/*.column-3 img {
+    border-radius: 50%;
+    float: left;
+    width: 10%;
+    margin-right: 10px;
+    margin-bottom: 0px;
+} */
+.left {
+    width:30%;
+}
+.centre {
+    width: 30%;
+}
+.right {
+    width: 30%;
+}
+.row div img {
+    border-radius: 50%;
+    height: auto;
+    width: 25%;
+    float: left;
+    margin: 10px;
+}
+.footer div img {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+.column p, .col p, .col a {
+    float: left;
+}
+.phone li {
+    list-style-image: url(../images/icon-phone.svg);
+    margin: auto;
+    padding: 10px;
+}
+.location li {
+    list-style-image: url(../images/icon-location.svg);
+    padding: 10px;
+    margin: 5px;
+}
+.email li {
+    list-style-image: url(../images/icon-email.svg);
+}
+.small li, .smally li, .social li {
+    list-style-image: none;
+    list-style: none;
+    display: inline;
+}
+.early-access {
+    background-color: var(--intro-email-background);
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px  hsl(218, 28%, 13%); 
+}
+input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 20px;
+}
+/*.footer {
+    display: grid;
+    grid-template-columns: 20% 15% 15% 15% 15%;
+    grid-column-gap: 10px;
+    width: 85%;
+    margin: 10px;
+    justify-content: space-around;
+    align-content: center;
+    text-align: justify;
+    align-items: center;
+}
+.footer div ul {
+    display: inline;
+}
+.footer div img {
+    height: auto;
+    width: auto;
+    margin-right: 20px;
+} */
+/*.footer:after  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.col {
+    float: left;
+    padding: 10px;
+    margin: 5px; 
+    width: 100%;
+}
+.location {
+    width: 20%;
+}
+.phone {
+    width: 20%;
+}
+.aside {
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: o;
+}*/
+footer {
+    background-color: var(--footer-background-color);
+    height: 300px;
+    width: 100%;
+}
+.foot-img {
+    margin: 35px;
+}
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+.location {
+    width: 25%;
+    position: absolute;
+    left: 0%;
+}
+.phone {
+    width: 15%;
+    position: absolute;
+    left: 28%;
+}
+.location li, .phone li {
+    margin: 15px;
+    width: 200px;
+}
+.small-nav {
+    width: 20%;
+    position: absolute;
+    top: 0%;
+    left: 100%; /* never forget to change this line if things don't work out. it should be: right: 0; */
+    margin-left: 10px;
+}
+.small-nav li, .smaller-nav li {
+    list-style-image: none;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+.small-nav li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    text-align: left;
+}
+/* smaller nav styles*/
+.smaller-nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    text-align: justify;
+}
+.smaller-nav {
+    width: 20%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 170%;
+    margin-left: 10px;
+}
+/* styling the social media icons*/
+.social {
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    left: 260%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.social i {
+    color: white;
+    width: 100px;
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/* time for mobile design*/
+
+@media screen and (max-width: 450px) {
+    /* top nav */
+    .logo {
+        margin: 15px;
+        width: 25%;
+    }
+    .header {
+        position: relative;
+    }
+    .nav {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        margin-left: 35px;
+        width: 60%;
+    }
+    nav a {
+        display: inline;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        color: var(--color);
+    }
+/* end of frustrating header design that doesn't have head. mtcewwww */
+ /* the grid layout design*/
+    .main {
+        height: 1500px;
+        margin-top: 120%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        text-align: center;
+    }
+/* end of that */
+/* the buttons */
+    button {
+        border-radius: 15px;
+        padding: 2px;
+        margin: 5px;
+        width: 70%;
+        background-color:  hsl(176, 68%, 64%);
+    }
+    input[type="email"] {
+        width: 80%;
+        padding: 5px;
+        border-radius: 15px;
+        margin: 10px;
+    }
+/* end of that */
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    align-content: center;
+    text-align: left;
+}
+/* that!!!!!!!*/
+/*row */
+    .column {
+        width: 100%;
+        padding: 10px;
+        margin: 15px;
+    }
+/* end of that!!!!*/
+/*start the footer */
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+    .location, .phone, .small-nav, .smaller-nav, .social {
+        width: 100%;
+        position: relative;
+        left: 0%;
+        top: 0%;
+        margin: 10px;
+    }
+    .small-nav, .smaller-nav {
+        margin-left: -8%;
+    }
+    .social {
+        margin: 10%;
+    }
+}
